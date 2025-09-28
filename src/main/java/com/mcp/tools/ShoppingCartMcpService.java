@@ -31,7 +31,7 @@ public class ShoppingCartMcpService {
     public String addToCart(@ToolParam String productName, @ToolParam int quantity){
 
         if(!PRODUCTS.containsKey(productName)){
-            return "product not found";
+            return "product not found";//
         }
 
         Double price = PRODUCTS.get(productName);
