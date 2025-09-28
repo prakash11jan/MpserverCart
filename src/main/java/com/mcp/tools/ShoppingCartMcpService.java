@@ -65,7 +65,7 @@ public class ShoppingCartMcpService {
             description = "Retrieve the current shopping cart items."
     )
     public List<CartItem> getCarts(){
-        return cartItemRepository.findAll();
+        return null;//cartItemRepository.findAll();
     }
 
     @Tool(
@@ -73,9 +73,7 @@ public class ShoppingCartMcpService {
             description = "Calculate the total price of items in the shopping cart."
     )
     public double getCartTotal() {
-        return cartItemRepository.findAll().stream()
-                .mapToDouble(CartItem::getPrice)
-                .sum();
+        return 200;//cartItemRepository.findAll().stream() .mapToDouble(CartItem::getPrice).sum();
     }
 
 }
