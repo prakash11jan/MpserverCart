@@ -56,7 +56,7 @@ public class ShoppingCartMcpService {
             description = "Remove a product from the shopping cart."
     )
     public String removeCart(@ToolParam String productName){
-        cartItemRepository.deleteByProductId(productName);
+        //cartItemRepository.deleteByProductId(productName);
         return productName + " removed from cart.";
     }
 
