@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "shopping-cart-server": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:\\MCP\\shopping-cart-mcp-main\\target\\shopping-cart-server.jar"
+      ]
+    }
+  }
+}
